@@ -3,7 +3,7 @@
 0505.co.kr(home2 저장소)의 교재 페이지가 쓰는 음원만 모아 둔 저장소. GitHub Pages로 공개되며,
 (2026-11-06 seoro-audio가 1GB에 가까워져 만든 2번째 저장소. 이미 녹음이 붙은 쪽은 seoro-audio 주소를 그대로 쓰고, 새 녹음만 여기로 온다. home2 `_seoro_tools/audiorepo.py`의 REPO_NAME = seoro-audio2)
 교재 HTML은 `https://nmyway77.github.io/seoro-audio2/audio/<파일>.mp3` 주소로 음원을 불러온다.
-(home2 저장소의 1GB 한도와 별개로 이 저장소가 1GB를 따로 쓴다. 다 차면 `seoro-audio2`를 만들어 같은 방식으로 잇는다.)
+(home2 저장소의 1GB 한도와 별개로 이 저장소가 1GB를 따로 쓴다. 다 차면 `seoro-audio3`을 만들어 같은 방식으로 잇는다.)
 
 ## 폴더
 - `audio/` — 교재 페이지가 실제로 재생하는 완성 음원 (48kbps 모노). 이름: `SEORO-CLASSICS_GR<레벨>_<제목>_p<쪽>_<fen|cen|ckr|...>.mp3`
