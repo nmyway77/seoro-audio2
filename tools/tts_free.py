@@ -48,6 +48,9 @@ def record(it):
     sr=None; parts=[]; spans=[]; t=0.0
     for i,ln in enumerate(lines):
         a,r=synth(ln.strip(),voice,speed); a=trim(a,r)
+        # 빈 소리 막기(2026-11-22: onnxruntime 1.23에서 줄 대부분이 0초로 나왔는데 그대로 올라감) — 글자 수에 비해 너무 짧으면 멈춤
+        nch=len(re.sub(r'[^0-9A-Za-z가-힣]','',ln))
+        if nch>=3 and len(a)/r < max(0.25, nch/40): raise SystemExit(f"!! 소리가 너무 짧음 {len(a)/r:.2f}초 · {nch}글자: {ln[:60]} — 설치된 onnxruntime 판 확인")
         if sr is None: sr=r
         if i: g=np.zeros(int(gaps[i-1]*sr),dtype=np.float32); parts.append(g); t+=len(g)/sr
         spans.append((t,t+len(a)/sr)); parts.append(a); t+=len(a)/sr
