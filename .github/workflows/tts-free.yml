@@ -1,0 +1,43 @@
+name: SEORO TTS (무료 — Kokoro 영어 · MeloTTS 한국어)
+on:
+  push:
+    paths: ['_tts_jobs_free/*.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: tts
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: 모델 보관함 (다음부터 빨리)
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/kokoro
+            ~/.cache/huggingface
+            ~/.cache/pip
+          key: free-tts-v1
+      - name: 프로그램 설치
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -q kokoro-onnx soundfile numpy
+          if grep -q -e 'ksaI0TCD9BstzEzlxj4q' -e 'melo:KR' _tts_jobs_free/*.json; then
+            pip install -q git+https://github.com/myshell-ai/MeloTTS.git
+            python -m unidic download
+          fi
+      - name: Record
+        run: python3 tools/tts_free.py
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "seoro-tts"
+          git config user.email "seoro-tts@users.noreply.github.com"
+          git add -A _tts_out _tts_jobs_free
+          git diff --cached --quiet || git commit -m "무료 TTS 결과 [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

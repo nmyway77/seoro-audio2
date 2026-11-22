@@ -13,6 +13,9 @@
   - `_tts_jobs/done/` — 처리 끝난 요청
 - `_tts_out/` — Actions가 받아 온 원본 mp3(128k) + 글자별 시각(json). home2의 `_seoro_tools/autotts.py attach`가 이걸 읽어 `audio/`에 완성 음원을 만든다.
 - `tools/tts_gh.py` — Actions에서 실행되는 녹음 스크립트. 키는 저장소 Secrets `ELEVENLABS_API_KEY`.
+- `_tts_jobs_free/` — **무료 음성** 녹음 요청(2026-11-22). 여기에 `*.json`이 푸시되면 `tts-free` Actions가 녹음한다(크레딧·키 없음). 처리 끝난 요청은 `_tts_jobs_free/done/`
+- `tools/tts_free.py` — 무료 녹음 스크립트. 영어 = Kokoro-82M 목소리 Heart(af_heart). 결과는 ElevenLabs와 같은 모양으로 `_tts_out/`에 저장 → `autotts.py attach`가 그대로 붙인다.
+  - 정한 것(2026-11-22): 새로 녹음하는 책의 영어 문장·영어 어구만 무료(Heart). 한국어 어구는 ElevenLabs Seulki 유지. home2: `autotts.py make <mod> '' KR_chunk free`(영어 2종 무료) + `autotts.py make <mod> '' EN_full,EN_chunk`(한국어만 ElevenLabs, 크레딧 보고·승인 후)
 
 ## 흐름
 1. home2: `python3 _seoro_tools/autotts.py make <mod>` → 이 저장소 `_tts_jobs/<mod>.json` 생성
