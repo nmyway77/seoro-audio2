@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'   # 3.10이면 onnxruntime 1.23이 깔려 Kokoro가 빈 소리를 냄(2026-11-22 확인)
+          python-version: '3.11'   # 3.10 = onnxruntime 1.23 → Kokoro 빈 소리(2026-11-22) · 3.12 = MeloTTS(fugashi) 설치 실패(2026-11-23)
       - name: 모델 보관함 (다음부터 빨리)
         uses: actions/cache@v4
         with:
@@ -22,13 +22,14 @@ jobs:
             ~/.cache/kokoro
             ~/.cache/huggingface
             ~/.cache/pip
-          key: free-tts-v2
+          key: free-tts-v3
       - name: 프로그램 설치
         run: |
           sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
           pip install -q 'onnxruntime>=1.29' 'kokoro-onnx>=0.6.1' soundfile numpy
           python -c "import onnxruntime as o;v=tuple(map(int,o.__version__.split('.')[:2]));print('onnxruntime',o.__version__);assert v>=(1,29),'onnxruntime 1.29 이상 필요'"
           if grep -q -e 'ksaI0TCD9BstzEzlxj4q' -e 'melo:KR' _tts_jobs_free/*.json; then
+            pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
             pip install -q git+https://github.com/myshell-ai/MeloTTS.git
             python -m unidic download
           fi
