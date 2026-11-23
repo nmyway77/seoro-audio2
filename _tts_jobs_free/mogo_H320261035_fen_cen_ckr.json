@@ -1,0 +1,19 @@
+{
+"items": [
+{
+"out": "mogo_H320261035_fen",
+"voice": "kokoro:af_heart",
+"text": "Research with patients with damage to the hippocampus has indicated that conscious memory of events and motor learning are separate neurological systems. <break time=\"0.8s\" /> A patient with hippocampal damage can learn a motor task and get better with practice, but each time he practices he will have no conscious memory of doing the task. <break time=\"0.8s\" /> The motor circuits become trained, but damage to the hippocampus prevents the formation of new conscious memories. <break time=\"0.8s\" /> Therefore, the motor circuits learn a new task, such as solving a simple mechanical puzzle, but the person does not remember seeing or doing the puzzle. <break time=\"0.8s\" /> With repeated practice, the person gets better and better at it, but each time the puzzle is presented, he says he has never seen it before."
+},
+{
+"out": "mogo_H320261035_cen",
+"voice": "kokoro:af_heart",
+"text": "Research with patients with damage to the hippocampus. <break time=\"0.8s\" /> Has indicated. <break time=\"0.8s\" /> That conscious memory of events and motor learning. <break time=\"0.8s\" /> Are separate neurological systems. <break time=\"0.8s\" /> A patient with hippocampal damage. <break time=\"0.8s\" /> Can learn a motor task. <break time=\"0.8s\" /> And get better with practice. <break time=\"0.8s\" /> But each time he practices. <break time=\"0.8s\" /> He will have no conscious memory of doing the task. <break time=\"0.8s\" /> The motor circuits become trained. <break time=\"0.8s\" /> But damage to the hippocampus. <break time=\"0.8s\" /> Prevents the formation of new conscious memories. <break time=\"0.8s\" /> Therefore. <break time=\"0.8s\" /> The motor circuits learn a new task. <break time=\"0.8s\" /> Such as solving a simple mechanical puzzle. <break time=\"0.8s\" /> But the person does not remember. <break time=\"0.8s\" /> Seeing or doing the puzzle. <break time=\"0.8s\" /> With repeated practice. <break time=\"0.8s\" /> The person gets better and better at it. <break time=\"0.8s\" /> But each time the puzzle is presented. <break time=\"0.8s\" /> He says. <break time=\"0.8s\" /> He has never seen it before."
+},
+{
+"out": "mogo_H320261035_ckr",
+"voice": "melo:KR",
+"text": "해마가 손상된 환자들을 대상으로 한 연구는. <break time=\"0.8s\" /> 보여 주었다. <break time=\"0.8s\" /> 사건에 대한 의식적인 기억과 운동 학습이. <break time=\"0.8s\" /> 별개의 신경학적 체계라는 것을. <break time=\"0.8s\" /> 해마가 손상된 환자는. <break time=\"0.8s\" /> 운동 과제를 배울 수 있다. <break time=\"0.8s\" /> 그리고 연습을 통해 더 잘하게 될 수 있다. <break time=\"0.8s\" /> 하지만 그가 연습할 때마다. <break time=\"0.8s\" /> 그는 그 과제를 했다는 의식적인 기억을 전혀 갖지 못할 것이다. <break time=\"0.8s\" /> 운동 회로는 훈련된다. <break time=\"0.8s\" /> 하지만 해마의 손상은. <break time=\"0.8s\" /> 새로운 의식적 기억의 형성을 막는다. <break time=\"0.8s\" /> 따라서. <break time=\"0.8s\" /> 운동 회로는 새로운 과제를 배운다. <break time=\"0.8s\" /> 예컨대 단순한 기계식 퍼즐을 푸는 것 같은 과제를. <break time=\"0.8s\" /> 하지만 그 사람은 기억하지 못한다. <break time=\"0.8s\" /> 그 퍼즐을 보았거나 했던 것을. <break time=\"0.8s\" /> 반복된 연습으로. <break time=\"0.8s\" /> 그 사람은 그것을 점점 더 잘하게 된다. <break time=\"0.8s\" /> 하지만 그 퍼즐이 제시될 때마다. <break time=\"0.8s\" /> 그는 말한다. <break time=\"0.8s\" /> 그것을 전에 한 번도 본 적이 없다고."
+}
+]
+}
