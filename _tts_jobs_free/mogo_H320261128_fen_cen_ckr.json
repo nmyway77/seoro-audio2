@@ -1,0 +1,19 @@
+{
+"items": [
+{
+"out": "mogo_H320261128_fen",
+"voice": "kokoro:af_heart",
+"text": "Fix it Festival. <break time=\"0.8s\" /> Do you have broken things at home and not know what to do with them. <break time=\"0.8s\" /> Our Prindlewood community is holding the Fix it Festival for the first time. <break time=\"0.8s\" /> Come with broken items, and our repair experts will try to make them like new. <break time=\"0.8s\" /> When, Sunday, November 29, 9, 00 a, m, 6, 00 p, m. <break time=\"0.8s\" /> Where, Prindlewood High School."
+},
+{
+"out": "mogo_H320261128_cen",
+"voice": "kokoro:af_heart",
+"text": "Fix it Festival. <break time=\"0.8s\" /> Do you have broken things at home. <break time=\"0.8s\" /> And not know what to do with them. <break time=\"0.8s\" /> Our Prindlewood community is holding. <break time=\"0.8s\" /> The Fix it Festival for the first time. <break time=\"0.8s\" /> Come with broken items. <break time=\"0.8s\" /> And our repair experts will try. <break time=\"0.8s\" /> To make them like new. <break time=\"0.8s\" /> When, Sunday, November 29. <break time=\"0.8s\" /> 9, 00 a, m, 6, 00 p, m. <break time=\"0.8s\" /> Where, Prindlewood High School."
+},
+{
+"out": "mogo_H320261128_ckr",
+"voice": "melo:KR",
+"text": "Fix it Festival 수리 축제 이다. <break time=\"0.8s\" /> 집에 고장 난 물건들이 있는가. <break time=\"0.8s\" /> 그리고 그것들을 어떻게 해야 할지 모르는가. <break time=\"0.8s\" /> 우리 Prindlewood 지역 사회가 개최한다. <break time=\"0.8s\" /> Fix it Festival을 처음으로. <break time=\"0.8s\" /> 고장 난 물품을 가지고 오라. <break time=\"0.8s\" /> 그러면 우리 수리 전문가들이 노력할 것이다. <break time=\"0.8s\" /> 그것들을 새것처럼 만들려고. <break time=\"0.8s\" /> 일시는 11월 29일 일요일이다. <break time=\"0.8s\" /> 오전 9시부터 오후 6시까지이다. <break time=\"0.8s\" /> 장소는 Prindlewood 고등학교이다."
+}
+]
+}
