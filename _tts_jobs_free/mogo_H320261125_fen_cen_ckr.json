@@ -1,0 +1,19 @@
+{
+"items": [
+{
+"out": "mogo_H320261125_fen",
+"voice": "kokoro:af_heart",
+"text": "The graph above shows the numbers of very hot days, defined as days with the highest daytime temperature reaching 35˚C or above, in six cities in 2023 and in 2024. <break time=\"0.8s\" /> Among the six cities, Cairo showed a greater number of very hot days than any other city in 2023 and in 2024, respectively. <break time=\"0.8s\" /> Beijing was the only city whose number of very hot days in 2024 was smaller than that in 2023 among the cities shown in the graph. <break time=\"0.8s\" /> In 2024, the number of very hot days in Manila was greater than that in Rome. <break time=\"0.8s\" /> Santiago had the smallest number of very hot days in 2023 as well as in 2024 among the cities above. <break time=\"0.8s\" /> In Washington, D, C, the number of very hot days in 2024 was more than three times that in 2023."
+},
+{
+"out": "mogo_H320261125_cen",
+"voice": "kokoro:af_heart",
+"text": "The graph above shows. <break time=\"0.8s\" /> The numbers of very hot days. <break time=\"0.8s\" /> Defined as days. <break time=\"0.8s\" /> With the highest daytime temperature reaching 35˚C or above. <break time=\"0.8s\" /> In six cities. <break time=\"0.8s\" /> In 2023 and in 2024. <break time=\"0.8s\" /> Among the six cities. <break time=\"0.8s\" /> Cairo showed a greater number of very hot days. <break time=\"0.8s\" /> Than any other city. <break time=\"0.8s\" /> In 2023 and in 2024, respectively. <break time=\"0.8s\" /> Beijing was the only city. <break time=\"0.8s\" /> Whose number of very hot days in 2024 was smaller. <break time=\"0.8s\" /> Than that in 2023. <break time=\"0.8s\" /> Among the cities shown in the graph. <break time=\"0.8s\" /> In 2024. <break time=\"0.8s\" /> The number of very hot days in Manila. <break time=\"0.8s\" /> Was greater than that in Rome. <break time=\"0.8s\" /> Santiago had the smallest number of very hot days. <break time=\"0.8s\" /> In 2023 as well as in 2024. <break time=\"0.8s\" /> Among the cities above. <break time=\"0.8s\" /> In Washington, D, C. <break time=\"0.8s\" /> The number of very hot days in 2024. <break time=\"0.8s\" /> Was more than three times that in 2023."
+},
+{
+"out": "mogo_H320261125_ckr",
+"voice": "melo:KR",
+"text": "위 도표는 보여 준다. <break time=\"0.8s\" /> 매우 더운 날의 수를. <break time=\"0.8s\" /> 매우 더운 날은 다음과 같은 날로 정의된다. <break time=\"0.8s\" /> 낮 최고 기온이 35˚C 이상에 이른 날로. <break time=\"0.8s\" /> 여섯 도시에서. <break time=\"0.8s\" /> 2023년과 2024년에. <break time=\"0.8s\" /> 여섯 도시 가운데. <break time=\"0.8s\" /> Cairo는 매우 더운 날의 수가 더 많았다. <break time=\"0.8s\" /> 다른 어느 도시보다도. <break time=\"0.8s\" /> 2023년과 2024년에 각각. <break time=\"0.8s\" /> Beijing은 유일한 도시였다. <break time=\"0.8s\" /> 그 도시는 2024년의 매우 더운 날 수가 더 적었다. <break time=\"0.8s\" /> 2023년의 그것보다. <break time=\"0.8s\" /> 도표에 제시된 도시들 가운데. <break time=\"0.8s\" /> 2024년에. <break time=\"0.8s\" /> Manila의 매우 더운 날 수는. <break time=\"0.8s\" /> Rome의 그것보다 더 많았다. <break time=\"0.8s\" /> Santiago는 매우 더운 날의 수가 가장 적었다. <break time=\"0.8s\" /> 2024년뿐만 아니라 2023년에도. <break time=\"0.8s\" /> 위의 도시들 가운데. <break time=\"0.8s\" /> Washington, D, C, 에서는. <break time=\"0.8s\" /> 2024년의 매우 더운 날 수가. <break time=\"0.8s\" /> 2023년의 그것의 세 배가 넘었다."
+}
+]
+}
