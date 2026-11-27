@@ -48,6 +48,11 @@ def record(it):
     sr=None; parts=[]; spans=[]; t=0.0
     for i,ln in enumerate(lines):
         a,r=synth(ln.strip(),voice,speed); a=trim(a,r)
+        # 너무 빨리 읽힌 영어 줄은 느리게 다시(2026-11-27 선생님: "약간 빠르네") — 초당 20글자 넘으면 18글자 정도로(속도 하한 0.8배)
+        if not str(voice).startswith('melo') and voice not in KR_VOICES:
+            nl=len(re.sub(r'[^0-9A-Za-z]','',ln)); dur=len(a)/r
+            if nl>=8 and dur>0 and nl/dur>20:
+                sp=max(0.8,speed*18/(nl/dur)); a,r=synth(ln.strip(),voice,sp); a=trim(a,r); print(f'  느리게 {sp:.2f}배: {ln.strip()[:50]}')
         # 빈 소리 막기(2026-11-22: onnxruntime 1.23에서 줄 대부분이 0초로 나왔는데 그대로 올라감) — 글자 수에 비해 너무 짧으면 멈춤
         nch=len(re.sub(r'[^0-9A-Za-z가-힣]','',ln))
         if nch>=3 and len(a)/r < max(0.25, nch/40): raise SystemExit(f"!! 소리가 너무 짧음 {len(a)/r:.2f}초 · {nch}글자: {ln[:60]} — 설치된 onnxruntime 판 확인")
