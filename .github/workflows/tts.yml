@@ -21,6 +21,13 @@ jobs:
         run: |
           git config user.name "seoro-tts"
           git config user.email "seoro-tts@users.noreply.github.com"
-          git add -A _tts_out _tts_jobs
-          git diff --cached --quiet || git commit -m "TTS 결과 [skip ci]"
+          # 녹음 결과물(_tts_out)은 tts-out 가지에만 저장 — 사이트(main, Pages)에는 올리지 않음 (2026-11-28 용량 관리)
+          if [ -d _tts_out ] && [ -n "$(ls -A _tts_out 2>/dev/null)" ]; then
+            git fetch -q --depth=1 origin tts-out
+            git worktree add -q -B tts-out /tmp/wt origin/tts-out
+            mkdir -p /tmp/wt/_tts_out && cp -a _tts_out/. /tmp/wt/_tts_out/
+            (cd /tmp/wt && git add -A _tts_out && (git diff --cached --quiet || git commit -q -m "TTS 결과 [skip ci]") && for i in 1 2 3; do git pull --rebase -q origin tts-out && git push -q origin tts-out && break; sleep 5; done)
+          fi
+          git add -A _tts_jobs
+          git diff --cached --quiet || git commit -m "TTS 요청 처리 [skip ci]"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

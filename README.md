@@ -22,3 +22,8 @@
 2. 이 저장소 커밋·푸시 → Actions 녹음 → `_tts_out/`에 결과 커밋 (https://github.com/nmyway77/seoro-audio2/actions)
 3. home2: `python3 _seoro_tools/autotts.py attach <mod>` → 이 저장소 `audio/`에 완성 음원, home2 쪽 HTML에 주소·시각 반영
 4. 두 저장소 모두 커밋·푸시
+
+## 용량 관리 (2026-11-28)
+- 사이트(Pages)는 main 가지를 그대로 공개한다. **main에는 `audio/`(사이트 음원)와 도구·요청 파일만** 둔다.
+- 녹음 결과물(`_tts_out/`: 처음 만든 mp3 + 글자별 시각 json)은 **`tts-out` 가지**에만 저장된다(두 녹음 Actions가 자동으로). 사이트에는 안 올라간다.
+- 쪽에 붙일 때(home2 `attach`) 결과물이 필요하면: `python3 _seoro_tools/audiorepo.py pull-out` (tts-out 가지의 `_tts_out`을 받아 이 폴더에 풀어 놓음, main에는 올라가지 않음 — `.gitignore`).
