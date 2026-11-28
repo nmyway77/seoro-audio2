@@ -1,0 +1,19 @@
+{
+"items": [
+{
+"out": "mogo_H320261018_fen",
+"voice": "kokoro:af_heart",
+"text": "Thank you for always ordering pies from our bakery for your special occasions. <break time=\"0.8s\" /> We truly appreciate your continued support and always try to provide pies of the highest quality. <break time=\"0.8s\" /> Unfortunately, we are writing to inform you that we are unable to prepare the apple pie you have ordered for the upcoming birthday celebration. <break time=\"0.8s\" /> Due to a delayed apple harvest this season, we are currently experiencing difficulties sourcing fresh apples. <break time=\"0.8s\" /> As a result, we are unable to fulfill the order that you have requested. <break time=\"0.8s\" /> We sincerely apologize for this situation. <break time=\"0.8s\" /> We appreciate your understanding and look forward to serving you again in the future."
+},
+{
+"out": "mogo_H320261018_cen",
+"voice": "kokoro:af_heart",
+"text": "Thank you for always ordering pies. <break time=\"0.8s\" /> From our bakery. <break time=\"0.8s\" /> For your special occasions. <break time=\"0.8s\" /> We truly appreciate your continued support. <break time=\"0.8s\" /> And always try to provide. <break time=\"0.8s\" /> Pies of the highest quality. <break time=\"0.8s\" /> Unfortunately. <break time=\"0.8s\" /> We are writing to inform you. <break time=\"0.8s\" /> That we are unable to prepare. <break time=\"0.8s\" /> The apple pie you have ordered. <break time=\"0.8s\" /> For the upcoming birthday celebration. <break time=\"0.8s\" /> Due to a delayed apple harvest this season. <break time=\"0.8s\" /> We are currently experiencing difficulties. <break time=\"0.8s\" /> Sourcing fresh apples. <break time=\"0.8s\" /> As a result. <break time=\"0.8s\" /> We are unable to fulfill. <break time=\"0.8s\" /> The order that you have requested. <break time=\"0.8s\" /> We sincerely apologize. <break time=\"0.8s\" /> For this situation. <break time=\"0.8s\" /> We appreciate your understanding. <break time=\"0.8s\" /> And look forward to serving you again. <break time=\"0.8s\" /> In the future."
+},
+{
+"out": "mogo_H320261018_ckr",
+"voice": "melo:KR",
+"text": "늘 파이를 주문해 주셔서 감사합니다. <break time=\"0.8s\" /> 저희 베이커리에서. <break time=\"0.8s\" /> 고객님의 특별한 날을 위해. <break time=\"0.8s\" /> 저희는 고객님의 변함없는 성원에 진심으로 감사드립니다. <break time=\"0.8s\" /> 그리고 언제나 제공하려고 노력합니다. <break time=\"0.8s\" /> 최고 품질의 파이를. <break time=\"0.8s\" /> 유감스럽게도. <break time=\"0.8s\" /> 저희는 고객님께 알려 드리고자 이 글을 씁니다. <break time=\"0.8s\" /> 저희가 준비해 드릴 수 없게 되었음을. <break time=\"0.8s\" /> 고객님께서 주문하신 사과파이를. <break time=\"0.8s\" /> 다가오는 생일 축하 행사를 위해. <break time=\"0.8s\" /> 이번 철 사과 수확이 늦어진 탓에. <break time=\"0.8s\" /> 저희는 현재 어려움을 겪고 있습니다. <break time=\"0.8s\" /> 신선한 사과를 구하는 데. <break time=\"0.8s\" /> 그 결과. <break time=\"0.8s\" /> 저희는 이행할 수 없습니다. <break time=\"0.8s\" /> 고객님께서 요청하신 주문을. <break time=\"0.8s\" /> 저희는 진심으로 사과드립니다. <break time=\"0.8s\" /> 이러한 상황에 대해. <break time=\"0.8s\" /> 저희는 고객님의 양해에 감사드립니다. <break time=\"0.8s\" /> 그리고 고객님을 다시 모시기를 고대합니다. <break time=\"0.8s\" /> 앞으로."
+}
+]
+}
